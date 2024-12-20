@@ -8,6 +8,7 @@ function App() {
     <h1 className='text-6xl font-bold '>tonetales.in</h1>
     <button>subscribe  how ever mmmmmm</button>
     <h1>fffff</h1>
+    e\<h2>dddddd</h2>
    </div>
    </>
   );
