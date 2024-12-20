@@ -6,7 +6,7 @@ function App() {
 
    <div className='flex justify-center items-center  h-screen w-full'>
     <h1 className='text-6xl font-bold '>tonetales.in</h1>
-    <button>subscribe now</button>
+    <button>subscribe  how ever</button>
    </div>
    </>
   );
