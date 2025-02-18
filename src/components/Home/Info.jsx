@@ -45,7 +45,7 @@ function Info() {
   }, []);
 
   return (
-    <div className="flex justify-center bg-black items-center  flex-col min-h-[50vh] w-full ">
+    <div className="flex justify-center bg-white items-center  flex-col min-h-[50vh] w-full ">
       <h1 className="first-text text-3xl md:text-4xl lg:text-5xl  text-gray-600 font-bold mb-4 text-center  ">Welcome to ToneTales</h1>
 
 

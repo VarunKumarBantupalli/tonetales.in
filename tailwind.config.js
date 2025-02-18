@@ -14,8 +14,8 @@ export default {
         'champagne': '#F7E7CE',
         'golden-sand': '#DAA520',
         'amber': '#FFBF00',
-      },
-      gradientColorStops: {
+
+        // Gradient Color Stops (Moved Inside Colors)
         'gold-start': '#FFD700',
         'gold-end': '#FF8C00',
         'bronze-start': '#CD7F32',
@@ -32,9 +32,15 @@ export default {
           '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(-100%)' },
         },
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
       },
       animation: {
-        scroll: 'scroll 10s linear infinite',
+        scroll: 'scroll 15s linear infinite',
+        scrollfast: 'scroll 5s linear infinite',
+        float: 'float 6s ease-in-out infinite',
       },
     },
   },

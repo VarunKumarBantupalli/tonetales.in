@@ -9,7 +9,7 @@ const InstagramEmbed = () => {
   }, []);
 
   return (
-    <div className="min-h-[50vh] bg-black flex flex-col items-center py-10">
+    <div className="w-full  flex flex-col items-center py-10">
      
 
       {/* Instagram Embed */}
