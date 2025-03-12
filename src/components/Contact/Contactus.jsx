@@ -24,13 +24,13 @@ const Contactus = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen ">
       {/* Header Section */}
       <div className="pt-20 pb-12 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-bronze-start to-bronze-end text-transparent bg-clip-text">
           Connect Now !
         </h1>
-        <p className="text-gray-400 max-w-2xl mx-auto px-4">
+        <p className="text-gray-600 max-w-2xl mx-auto px-4">
           Ready to bring your event to life? Reach out to us through any of these channels, and we'll get back to you within 24 hours.
         </p>
       </div>
@@ -71,7 +71,7 @@ const Contactus = () => {
               </div>
             </a>
           ))}
-        </div>
+        </div>           
       </div>
 
       {/* Bottom Section */}

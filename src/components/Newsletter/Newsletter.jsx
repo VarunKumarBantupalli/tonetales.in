@@ -62,7 +62,7 @@ const Newsletter = () => {
   };
 
   return (
-    <div className="relative min-h-[500px]  text-white overflow-hidden">
+    <div className="relative min-h-[400px]    text-gray-600 overflow-hidden">
 
 
       <div className="relative z-10 container mx-auto px-4 py-20">
@@ -81,7 +81,7 @@ const Newsletter = () => {
               </div>
             </div>
 
-            <p ref={contentRef} className="text-gray-300 text-lg max-w-2xl mx-auto">
+            <p ref={contentRef} className="text-gray-600 text-lg max-w-2xl mx-auto">
               Stay in tune with the latest updates, and special offers from our musical journey.
             </p>
           </div>

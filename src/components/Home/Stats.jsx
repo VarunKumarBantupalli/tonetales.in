@@ -110,7 +110,7 @@ function Stats() {
               <div className="absolute -inset-0.5 bg-gradient-to-r from-bronze-start to-bronze-end rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000" />
               
               {/* Card Content */}
-              <div className="relative h-full bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 transition-transform duration-500 group-hover:-translate-y-2">
+              <div className="relative h-full bg-gray-800 backdrop-blur-sm rounded-2xl p-8 transition-transform duration-500 group-hover:-translate-y-2">
                 {/* Icon */}
                 <div className="mb-6 inline-block p-4 rounded-xl bg-gradient-to-r from-bronze-start to-bronze-end text-black transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
                   {stat.icon}

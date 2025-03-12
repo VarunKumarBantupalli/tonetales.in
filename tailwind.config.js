@@ -39,7 +39,7 @@ export default {
       },
       animation: {
         scroll: 'scroll 15s linear infinite',
-        scrollfast: 'scroll 5s linear infinite',
+        scrollfast: 'scroll 10s linear infinite',
         float: 'float 6s ease-in-out infinite',
       },
     },

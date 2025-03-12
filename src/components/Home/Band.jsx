@@ -71,13 +71,13 @@ const Band = () => {
                   <div className="relative group cursor-pointer">
                     <div className="absolute -inset-1 bg-gradient-to-r from-bronze-start to-bronze-end rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
                     <h1 className="flex relative px-7 py-4 bg-black rounded-lg text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-start to-amber-end">
-                      Band Midhunam <img className='mx-2 h-12 w-12 filter invert ' src={latest} alt="" />
+                      Band Midhunam <img className='mx-2 h-12 w-12 filter  ' src={latest} alt="" />
                     </h1>
                     
                   </div>
                 </div>
                 
-                <p className="text-gray-300 text-lg leading-relaxed">
+                <p className="text-gray-600 text-lg leading-relaxed">
                   Experience the real music with Band Midhunam. 
                   A unique blend of melodies and pops .
                 </p>

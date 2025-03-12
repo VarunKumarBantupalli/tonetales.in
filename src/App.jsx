@@ -10,6 +10,8 @@ import AddArtists from './components/Admin/AddArtists';
 import Subscribers from './components/Admin/Subscribers';
 import ProtectedRoute from './components/Login/ProtectedRoute';
 import AllArtists from './components/Booking/AllArtists';
+import ScrollToTop from './components/ScrollToTop';
+import EditArtists from './components/Admin/EditArtists';
 
 
 
@@ -18,7 +20,7 @@ function App() {
   return (
     <>
       <Router>
-
+          <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Auth />} />
@@ -40,7 +42,7 @@ function App() {
                 <Dashboard />
               </ProtectedRoute>
             } >
-            <Route path="edit-artists" element={<AddArtists />} />
+            <Route path="edit-artists" element={<EditArtists />} />
             <Route path="manage-subscribers" element={<Subscribers />} />
           </Route>
 

@@ -30,7 +30,7 @@ const Merchandise = () => {
   }, []);
 
   return (
-    <div className="min-h-screen w-full text-white relative overflow-hidden">
+    <div className="min-h-screen w-full text-white bg-gradient-to-br from-gray-900 via-black to-gray-900 relative overflow-hidden">
 
       
       

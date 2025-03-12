@@ -10,6 +10,7 @@ import Footer from '../Footer/Footer'
 import Newsletter from '../Newsletter/Newsletter';
 import Band from './Band';
 
+
 function Home() {
 
 
@@ -25,9 +26,10 @@ function Home() {
       <Artists />    
       <Stats />
       <Band/>      
-      <Socialmedia />  
-      <Newsletter/>
-      <Footer/>
+      <Socialmedia />
+      <Newsletter />
+       <Footer/>
+       
     </>
   );
 }
