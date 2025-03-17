@@ -13,7 +13,6 @@ function Footer() {
 
   useEffect(() => {
     if (footerRef.current && letterContainerRef.current) {
-      // Animate footer sections
       gsap.from(footerRef.current.querySelectorAll('.footer-section'), {
         scrollTrigger: {
           trigger: footerRef.current,
@@ -28,7 +27,6 @@ function Footer() {
         ease: 'power3.out'
       });
 
-      // Animate letters
       gsap.from(letterContainerRef.current.children, {
         scrollTrigger: {
           trigger: letterContainerRef.current,
@@ -70,38 +68,34 @@ function Footer() {
   ];
 
   return (
-    <footer ref={footerRef} className="relative bg-gradient-to-br from-gray-900 via-black to-gray-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="flex justify-around items-center gap-12">
+    <footer ref={footerRef} className="bg-gradient-to-br from-gray-900 via-black to-gray-900">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center md:text-left">
           {/* Contact Section */}
-          <div className="footer-section space-y-6">
-            <h2 className="text-gray-200 text-2xl font-bold tracking-wider">Contact</h2>
-            <div className="space-y-4">
-              <a href="tel:+917569594275" className="flex items-center group">
-                <Phone className="w-5 h-5 text-blue-500 mr-3 transition-transform group-hover:rotate-12" />
-                <span className="text-gray-400 group-hover:text-gray-200 transition-colors">
-                  +91 75695 94275
-                </span>
+          <div className="footer-section space-y-4">
+            <h2 className="text-gray-200 text-lg md:text-xl font-bold">Contact</h2>
+            <div className="space-y-3">
+              <a href="tel:+917569594275" className="flex items-center justify-center md:justify-start group">
+                <Phone className="w-5 h-5 text-blue-500 mr-3 group-hover:rotate-12 transition-transform" />
+                <span className="text-gray-400 group-hover:text-gray-200 transition-colors">+91 75695 94275</span>
               </a>
-              <a href="mailto:tonetaless04@gmail.com" className="flex items-center group">
-                <Mail className="w-5 h-5 text-red-500 mr-3 transition-transform group-hover:rotate-12" />
-                <span className="text-gray-400 group-hover:text-gray-200 transition-colors">
-                  tonetaless04@gmail.com
-                </span>
+              <a href="mailto:tonetaless04@gmail.com" className="flex items-center justify-center md:justify-start group">
+                <Mail className="w-5 h-5 text-red-500 mr-3 group-hover:rotate-12 transition-transform" />
+                <span className="text-gray-400 group-hover:text-gray-200 transition-colors">tonetaless04@gmail.com</span>
               </a>
             </div>
           </div>
 
           {/* Quick Links Section */}
-          <div className="footer-section space-y-6">
-            <h2 className="text-gray-200 text-2xl font-bold tracking-wider">Quick Links</h2>
-            <div className="space-y-4">
+          <div className="footer-section space-y-4">
+            <h2 className="text-gray-200 text-lg md:text-xl font-bold">Quick Links</h2>
+            <div className="space-y-3">
               {socialLinks.slice(0, 2).map((link, index) => (
                 link.isInternal ? (
                   <Link
                     key={index}
                     to={link.url}
-                    className="flex items-center group hover:translate-x-2 transition-transform"
+                    className="flex items-center justify-center md:justify-start group hover:translate-x-2 transition-transform"
                   >
                     <span className="text-gray-400 group-hover:text-gray-200 transition-colors mr-3">
                       {link.name}
@@ -114,7 +108,7 @@ function Footer() {
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center group hover:translate-x-2 transition-transform"
+                    className="flex items-center justify-center md:justify-start group hover:translate-x-2 transition-transform"
                   >
                     <span className="text-gray-400 group-hover:text-gray-200 transition-colors mr-3">
                       {link.name}
@@ -127,16 +121,16 @@ function Footer() {
           </div>
 
           {/* Social Media Section */}
-          <div className="footer-section space-y-6">
-            <h2 className="text-gray-200 text-2xl font-bold tracking-wider">Social Media</h2>
-            <div className="space-y-4">
+          <div className="footer-section space-y-4">
+            <h2 className="text-gray-200 text-lg md:text-xl font-bold">Social Media</h2>
+            <div className="space-y-3">
               {socialLinks.slice(2).map((link, index) => (
                 <a
                   key={index}
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center group hover:translate-x-2 transition-transform"
+                  className="flex items-center justify-center md:justify-start group hover:translate-x-2 transition-transform"
                 >
                   <span className="text-gray-400 group-hover:text-gray-200 transition-colors mr-3">
                     {link.name}
@@ -149,12 +143,12 @@ function Footer() {
         </div>
 
         {/* Bottom Title */}
-        <div ref={letterContainerRef} className="relative mt-16 py-8 overflow-hidden">
-          <div className="flex justify-center items-center space-x-4 md:space-x-8">
+        <div ref={letterContainerRef} className="mt-10 py-6">
+          <div className="flex flex-wrap justify-center space-x-2 sm:space-x-4 md:space-x-6 lg:space-x-8">
             {letters.map((letter, index) => (
               <div
                 key={index}
-                className="text-6xl md:text-8xl lg:text-9xl font-bold text-gray-800 hover:text-gray-700  cursor-default transform hover:scale-110 transition-transform"
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-800 hover:text-gray-700 cursor-default transform hover:scale-110 transition-transform"
                 style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.1)' }}
               >
                 {letter}
@@ -163,7 +157,6 @@ function Footer() {
           </div>
         </div>
       </div>
-
     </footer>
   );
 }
