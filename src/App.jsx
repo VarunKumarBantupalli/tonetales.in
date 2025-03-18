@@ -24,15 +24,8 @@ function App() {
           <Route path="/login" element={<Auth />} />
           <Route path="/shop" element={<Merchandise />} />
           <Route path="/booking" element={<Booking />} />
-          <Route path="/contactus" element={<Contactus />}></Route>
-          {/* <Route
-            path="/dashboard"
-            element={
-              <ProtectedRoute requiredRole="admin">
-                <Dashboard />
-              </ProtectedRoute>
-            }
-          /> */}
+          <Route path="/contactus" element={<Contactus />}/>
+
           <Route
             path="/dashboard"
             element={
