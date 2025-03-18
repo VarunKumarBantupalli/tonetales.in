@@ -14,7 +14,7 @@ const AllArtists = () => {
   });
 
   const locations = ['all', 'Hyderabad', 'Bangalore'];
-  const types = ['all', 'Singer', 'band', 'Musician'];
+  const types = ['all', 'Singer', 'Band', 'Musician'];
 
   useEffect(() => {
     const unsubscribe = onSnapshot(collection(db, 'artists'), (snapshot) => {
