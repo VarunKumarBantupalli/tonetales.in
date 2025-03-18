@@ -9,6 +9,7 @@ import Socialmedia from './Socialmedia';
 import Footer from '../Footer/Footer'
 import Newsletter from '../Newsletter/Newsletter';
 import Band from './Band';
+import Hiring from '../Hiring';
 
 
 function Home() {
@@ -28,6 +29,7 @@ function Home() {
       <Band/>      
       <Socialmedia />
       <Newsletter />
+      <Hiring/>
        <Footer/>
        
     </>
