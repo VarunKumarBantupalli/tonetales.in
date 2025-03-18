@@ -6,10 +6,8 @@ import Merchandise from './components/Merchandise/Merchandise';
 import Contactus from './components/Contact/Contactus';
 import Booking from './components/Booking/Booking';
 import Dashboard from './components/Admin/Dashboard';
-import AddArtists from './components/Admin/AddArtists';
 import Subscribers from './components/Admin/Subscribers';
 import ProtectedRoute from './components/Login/ProtectedRoute';
-import AllArtists from './components/Booking/AllArtists';
 import ScrollToTop from './components/ScrollToTop';
 import EditArtists from './components/Admin/EditArtists';
 
