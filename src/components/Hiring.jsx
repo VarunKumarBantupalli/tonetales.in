@@ -1,10 +1,13 @@
 import React from 'react';
 import { Music, Palette, HeartHandshake } from 'lucide-react';
 
+import { FaInstagram, FaArrowRight } from "react-icons/fa";
+import { SlCalender } from "react-icons/sl";
+
 const Hiring = () => {
   const handleApply = () => {
     // Replace with your actual Google Form URL
-    window.open('https://forms.google.com/your-form-url', '_blank');
+    window.open('https://forms.gle/v5WGLyGZoKejqMYt9', '_blank');
   };
 
   return (
@@ -25,9 +28,9 @@ const Hiring = () => {
                     We're Hiring Artists!
                   </h2>
                   <div className="flex gap-4">
-                    <Palette className="w-8 h-8 text-yellow-200" />
-                    <Music className="w-8 h-8 text-yellow-200" />
-                    <HeartHandshake className="w-8 h-8 text-yellow-200" />
+                    <Palette className="w-8 h-8 text-lg font-medium text-white " />
+                    <Music  className="w-8 h-8 text-lg font-medium text-white " />
+                    <HeartHandshake  className="w-8 h-8 text-lg font-medium text-white "/>
                   </div>
                 </div>
               </div>
@@ -65,12 +68,18 @@ const Hiring = () => {
             </div>
 
             <div className="flex flex-col items-center lg:items-start space-y-6">
+
+
               <button
                 onClick={handleApply}
-                className="bg-yellow-600 hover:bg-yellow-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-              >
-                Apply Now
+                className="group relative inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-medium text-white bg-gradient-to-r from-bronze-start to-bronze-end rounded-full overflow-hidden shadow-lg transition-all duration-300 hover:scale-105">
+                <SlCalender className="w-5 h-5" />
+                <span>Apply</span>
+                <FaArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
+                <div className="absolute inset-0 bg-gradient-to-r from-bronze-start to-bronze-end opacity-0 group-hover:opacity-20 transition-opacity"></div>
               </button>
+
+
               <p className="text-sm text-gray-500">
                 Join us in creating spaces that inspire and heal
               </p>
