@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { db } from '../../authentication/firebase.js';  
+import { db  } from '../../authentication/firebase.js';  
 import { collection, onSnapshot } from 'firebase/firestore';
 import { MapPin, Calendar, Star, Music, Users, Mic } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import {  query, orderBy } from 'firebase/firestore';
 
 const AllArtists = () => {
   const navigate = useNavigate();
@@ -16,17 +17,23 @@ const AllArtists = () => {
   const locations = ['all', 'Hyderabad', 'Bangalore'];
   const types = ['all', 'Singer', 'Band', 'Musician'];
 
-  useEffect(() => {
-    const unsubscribe = onSnapshot(collection(db, 'artists'), (snapshot) => {
-      const artistList = snapshot.docs.map(doc => ({
-        id: doc.id,
-        ...doc.data(),
-      }));
-      setArtists(artistList);
-      setFilteredArtists(artistList);
-    });
-    return () => unsubscribe();
-  }, []);
+useEffect(() => {
+  const q = query(
+    collection(db, 'artists'),
+    orderBy('order')   
+  );
+
+  const unsubscribe = onSnapshot(q, (snapshot) => {
+    const artistList = snapshot.docs.map(doc => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+    setArtists(artistList);
+    setFilteredArtists(artistList);
+  });
+
+  return () => unsubscribe();
+}, []);
 
   useEffect(() => {
     let result = artists;
