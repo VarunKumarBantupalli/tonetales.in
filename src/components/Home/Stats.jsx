@@ -5,23 +5,23 @@ import { Users, Clock, Music } from 'lucide-react';
 const statsData = [
   {
     icon: <Users className="w-12 h-12" />,
-    title: 'Trusted by 35+ Clients',
-    description: 'Building enduring partnerships with over 35 satisfied clients, delivering excellence and tailored solutions that exceed expectations.',
-    value: 35,
+    title: 'Trusted by 50+ Clients',
+    description: 'Building enduring partnerships with over 50 satisfied clients, delivering excellence and tailored solutions that exceed expectations.',
+    value: 50,
     suffix: '+',
   },
   {
     icon: <Music className="w-12 h-12" />,
-    title: '200+ Successful Shows',
-    description: 'Experience the magic of 200+ shows brought to life with creativity, precision, and an unwavering commitment to quality.',
-    value: 200,
+    title: '470+ Successful Shows',
+    description: 'Experience the magic of 470+ shows brought to life with creativity, precision, and an unwavering commitment to quality.',
+    value: 470,
     suffix: '+',
   },
   {
     icon: <Clock className="w-12 h-12" />,
-    title: '6000+ Hours of Dedication',
-    description: 'Over 6000 hours devoted to turning ideas into impactful results, ensuring every detail contributes to success.',
-    value: 6000,
+    title: '10000+ Hours of Dedication',
+    description: 'Over 10000 hours devoted to turning ideas into impactful results, ensuring every detail contributes to success.',
+    value: 10000,
     suffix: '+',
   },
 ];
